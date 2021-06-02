@@ -1,0 +1,99 @@
+body{
+	font-size: 60px;
+	background: #F7F2C4;
+	text-align: center;
+}
+
+@font-face {
+	font-family:'Sigmar One';
+	src:  url(Font/SigmarOne-Regular.ttf);
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family:'Mate SC';
+	src:  url(Font/MateSC-Regular.ttf);
+	font-style: normal;
+	font-weight: 400;
+}
+
+
+.grid{
+	display: grid;
+	grid-template-rows: repeat(3,33.33%);
+}
+
+
+.font1 h1 {
+	font-family: 'marvin-round', sofia-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #F04A49;
+}
+
+.font1 h1:hover {
+	animation: slide 5s infinite alternate;
+}
+
+.font2 h1 {
+	font-family: 'Amatic SC', roboto, cursive;
+	font-weight: 700;
+	font-style:  bold;
+	color: #74E2E2
+}
+
+.font2 h1:hover {
+	animation: disappear 2s infinite alternate;
+}
+
+.font3 h1{
+	font-family: 'Sigmar One', Mate SC, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #6ED375
+}
+
+.font3 h1:hover{
+	animation: expand 3s infinite alternate;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(400px);
+  }
+
+  75% {
+  	transform: translateX(0px);
+  }
+
+  100%{
+  	transform: translateX(-400px);
+  }
+}
+
+@keyframes disappear {
+	from{
+		opacity: 100;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes expand {
+	from {
+		transform: scale(1,1);
+	}
+	to {
+		transform: scale(2.5,2.5);
+
+	}
+}
+
+
+
