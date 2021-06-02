@@ -6,14 +6,14 @@ body{
 
 @font-face {
 	font-family:'Sigmar One';
-	src:  url(Font/SigmarOne-Regular.ttf);
+	src:  url(./Font/SigmarOne-Regular.ttf);
 	font-style: normal;
 	font-weight: 400;
 }
 
 @font-face {
 	font-family:'Mate SC';
-	src:  url(Font/MateSC-Regular.ttf);
+	src:  url(./Font/MateSC-Regular.ttf);
 	font-style: normal;
 	font-weight: 400;
 }
